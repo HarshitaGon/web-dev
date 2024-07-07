@@ -1,0 +1,56 @@
+/* universal selector */
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: #fefae0;
+}
+
+/* element selector */
+button {
+    font-size: 30px;
+    background-color: #83c5be;
+}
+
+/* selector list(2 element selector) */
+h1, h2 {
+    color: #780000;
+}
+
+/* ID selector */
+#signup {
+    background-color: #bc4749;
+    color: #f2e8cf;
+}
+
+span {
+    color: #0b2545;
+}
+
+/* class selector */
+.tag {
+    background-color: #333d29;
+    color: #ffe8d6;
+    font-size: 16px;
+}
+
+/* descendant selector */
+span a {
+    color: #0b2545;
+}
+
+footer a {
+    color: #6c584c;
+}
+
+/* adjacent selector */
+h2 + button {
+    font-size: 20px;
+    background-color: lightpink;
+}
+
+/* direct child selector */
+footer > a {
+    color: #00607a;
+}

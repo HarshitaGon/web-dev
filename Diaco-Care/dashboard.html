@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="./asset/logo1.png">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- swiper cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Dico Care</a>
+
+        <nav class="navbar">
+            <a href="index.html"><i class="fas fa-house"></i> Home</a>
+            <a href="#dashboard"><i class="fas fa-chart-pie"></i> Dashboard</a>
+        </nav>
+
+        <div class="fas fa-bars" id="menu"></div>
+    </header>
+
+    <section class="dashboard" id="dashboard">
+
+        <div class="name">Hi, Harshita</div>
+        <div class="ybox"></div>
+        <div class="pborder">
+            <img type="button" src="image2/prof.png" class="pbox">
+        </div>
+        <div class="info">
+            <div class="info1 card">
+                <a href="chatbox.html">
+                    <h2>DiCo AI</h2>
+                    <img src="image2/info1.jpg" alt="AI">
+                </a>
+            </div>
+            <div class="info2">
+                <div class="info2-1 card chart">
+                    <h2><i class="fa-solid fa-chart-pie"></i> Daily Track</h2>
+                </div>
+            </div>
+            <div class="info2">
+                <div class="info2-1 card chart">
+                    <a href="chart.html">
+                        <h2><i class="fa-solid fa-chart-pie"></i> Monthly Tracks</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="info3 card">
+                <h2>Today's Diet</h2>
+                <a href="#diet"><img src="image2/diet.jpg" alt="diet"></a>
+            </div>
+            <div class="info4 card">
+                <h2>Today's Workout</h2>
+                <a href="#workout"><img src="image2/workout.jpg" alt="workout"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <dialog class="profile">
+        <p>Email : harshitagon@gmail.com</p>
+        <p>Name : Harshita Gon</p>
+        <button>Help</button>
+        <button id="medi">Medical Details</button>
+        <a href="home.html"><button>Logout</button></a>
+    </dialog>
+
+    <dialog id="detail">
+        <h3>Medical details</h3>
+        <p>Blood sugar level : 100mg/dl</p>
+        <p>HbA1c level : 7%</p>
+        <p>Blood pressure : 100/90mmHg</p>
+        <p>Weight : 58kg</p>
+    </dialog>
+
+    <dialog class="health">
+        <div class="img"></div>
+        <div class="options">
+            <div class="option">
+                <div class="opt">
+                    <div class="opt-info">
+                        <i class="fa-solid fa-heart-pulse heart"></i>
+                        <dialog class="box box1">
+                            <p>Heart Rate</p>
+                        </dialog>
+                    </div>
+                </div>
+                <a href="heart.html"><p>Heart Rate</p></a>
+            </div>
+            <div class="option">
+                <div class="opt">
+                    <div class="opt-info">
+                        <i class="fa-solid fa-fire kcal"></i></i>
+                        <dialog class="box box2">
+                            <h3>120</h3>
+                            <p>Kcal Burn</p>
+                        </dialog>
+                    </div>
+                </div>
+                <p>Kcal</p>
+            </div>
+            <div class="option">
+                <div class="opt">
+                    <div class="opt-info">
+                        <i class="fa-solid fa-face-tired stress"></i>
+                        <dialog class="box box3">
+                            <h3>High</h3>
+                            <p>Stress</p>
+                        </dialog>
+                    </div>
+
+                </div>
+                <p>Stress</p>
+            </div>
+            <div class="option">
+                <div class="opt">
+                    <div class="opt-info">
+                        <i class="fa-solid fa-person-walking steps"></i>
+                    </div>
+                    <dialog class="box box4">
+                        <h3>40</h3>
+                        <p>Steps</p>
+                    </dialog>
+                </div>
+                <p>Steps</p>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="box box1">
+        <h3>88</h3>
+        <p>Heart Rate</p>
+    </dialog>
+
+    <!-- diet section starts-->
+
+    <section class="diet" id="diet">
+
+        <h1 class="heading">diet plan</h1>
+
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">
+                <img src="https://cdn-icons-png.flaticon.com/512/706/706133.png" alt="">
+                <h3>all</h3>
+            </li>
+            <li class="buttons" data-filter="breakfast">
+                <img src="https://cdn-icons-png.flaticon.com/512/78/78821.png" alt="">
+                <h3>breakfast</h3>
+            </li>
+            <li class="buttons" data-filter="lunch">
+                <img src="https://cdn-icons-png.freepik.com/512/2081/2081949.png" alt="">
+                <h3>lunch</h3>
+            </li>
+            <li class="buttons" data-filter="dinner">
+                <img src="https://static.thenounproject.com/png/3243066-200.png" alt="">
+                <h3>dinner</h3>
+            </li>
+        </ul>
+
+        <div class="image-container">
+
+            <div class="box lunch">
+                <div class="image">
+                    <img src="https://www.diabetesaustralia.com.au/wp-content/uploads/banana-bread-on-wooden-board-GettyImages-1406235651-1.png"
+                        alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Low GI banana bread</a>
+                    <p> 1 cup wholemeal plain flour
+                        1 teaspoon bicarbonate of soda
+                        ½ teaspoon baking powder
+                        ¼ teaspoon salt
+                        ½ teaspoon ground cinnamon
+                        1 cup rolled oats
+                        ½ cup almond meal
+                        3 bananas large, ripe, mashed
+                        ⅓ cup extra virgin olive oil
+                        ⅓ cup low GI honey
+                    </p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 13 august, 2023</a>
+                        <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box breakfast">
+                <div class="image">
+                    <img src="https://www.diabetesaustralia.com.au/wp-content/uploads/Roast-veg-salad-GettyImages-833789046.png"
+                        alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Air-Fryer Roasted Vegetable Salad</a>
+                    <p>4 carisma potatoes (low-GI carisma potatoes are more slowly digested than regular white potatoes)
+                        ½ medium zucchini
+                        1 red capsicum
+                        1 garlic clove
+                        ½ butternut pumpkin
+                    </p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 13 august, 2023</a>
+                        <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box breakfast">
+                <div class="image">
+                    <img src="https://www.diabetesaustralia.com.au/wp-content/uploads/cauli-soup-1062974986.png" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Creamy cauliflower soup</a>
+                    <p>1 brown onion, chopped
+                        2 cloves of garlic, peeled and chopped
+                        1 whole cauliflower (about 1kg), trimmed and cut into florets
+                        2 medium potatoes, chopped
+                        2 cups reduced salt vegetable stock
+                        2 cups reduced fat milk
+                    </p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 13 august, 2023</a>
+                        <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box breakfast">
+                <div class="image">
+                    <img src="https://www.diabetesaustralia.com.au/wp-content/uploads/zucchini-fritter-612267532.png"
+                        alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Zucchini and sweet potato fritters</a>
+                    <p> 2 eggs
+                        2/3 cup wholemeal flour
+                        3 medium zucchinis
+                        1 large sweet potato
+                        1 small Spanish onion
+                        1/2 teaspoon paprkia
+                        1/4 teaspoon cumin
+                        1/2 teaspoon salt
+                    </p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 13 august, 2023</a>
+                        <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box lunch">
+                <div class="image">
+                    <img src="https://www.diabetesaustralia.com.au/wp-content/uploads/raspberry-chia-otas-521258778.png"
+                        alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Chia and raspberry overnight oats</a>
+                    <p>2/3 cup rolled oats
+                        4 teaspoons chia seeds
+                        1 cup fresh or frozen raspberries
+                        1/3 cup plain low-fat Greek yoghurt
+                        1 cup reduced fat milk</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 13 august, 2023</a>
+                        <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box dinner">
+                <div class="image">
+                    <img src="https://www.diabetesaustralia.com.au/wp-content/uploads/banana-overnight-oats-1087086262.png"
+                        alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Banana and cinnamon overnight oats</a>
+                    <p> 2/3 cup rolled oats
+                        4 teaspoons chia seeds
+                        1 medium banana
+                        1/2 teaspoon cinnamon
+                        1 teaspoon honey
+                        1/3 cup reduced fat milk
+                        10g (about 9 almonds), chopped, roasted and unsalted almonds</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 13 august, 2023</a>
+                        <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box dinner">
+                <div class="image">
+                    <img src="https://www.diabetesaustralia.com.au/wp-content/uploads/Apple-and-Raspberry-Crumble.png.jpg"
+                        alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Apple and raspberry crumble</a>
+                    <p> 800g can apples, chopped
+
+                        1 cup frozen raspberries
+
+                        4 Sanitarium Weet-bix, lightly crushed
+
+                        1/2 cup rolled oats
+
+                        1 tablespoon brown sugar
+
+                        2 tablespoons canola oil</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 13 august, 2023</a>
+                        <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box dinner">
+                <div class="image">
+                    <img src="https://www.diabetesaustralia.com.au/wp-content/uploads/Frozen-Tropical-Sorbet.png.jpg"
+                        alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Frozen tropical sorbet</a>
+                    <p> 1/2 x 440 g can crushed pineapple in natural juice, frozen
+
+                        1 ripe banana
+
+                        Pulp of 1 large passionfruit</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 13 august, 2023</a>
+                        <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box dinner">
+                <div class="image">
+                    <img src="https://www.diabetesaustralia.com.au/wp-content/uploads/berry-oat-smoothie.jpg.jpg"
+                        alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Berry oat smoothie</a>
+                    <p> 250g frozen mixed berries
+
+                        1 banana
+
+                        2 cups So Good Almond Coconut Milk
+
+                        1/4 cup rolled oats
+
+                        1 cup crushed ice
+
+                        1 tablespoon linseed meal</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 13 august, 2023</a>
+                        <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- diet section starts-->
+
+
+    <!-- workout section starts -->
+
+    <section class="workout" id="workout">
+
+        <h1 class="heading">workout schedule</h1>
+
+        <div class="workout-item">
+
+            <div class="box walking">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIguVug64S42ZN43KBxsU-fPR47GOU78X-3HnqDDPY3dxO_n4zX7VS_1BcR1NhUagCF5A&usqp=CAU" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">brisk walking</a>
+                    <p>It increased cardiovascular and pulmonary (heart and lung) fitness. It reduced risk of heart disease and stroke. It improved management of conditions such as hypertension, diabetes.</p>
+                </div>
+            </div>
+
+            <div class="box cycling">
+                <div class="image">
+                    <img src="https://www.technogym.com/wpress/wp-content/uploads/2018/05/GettyImages-684059248facebook.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">cycling</a>
+                    <p>Cycling is an aerobic exercise that gets the heart pumping and the blood flowing, which can help improve overall health and well-being. It helps improve insulin sensitivity and lower blood glucose levels.</p>
+                </div>
+            </div>
+
+            <div class="box swimming">
+                <div class="image">
+                    <img src="https://www.diabetesaustralia.com.au/wp-content/uploads/Aqua-aerobics-men-in-pool-1451003441.png" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">swimming</a>
+                    <p>It help to strengthen muscles and improve coordination. It help you manage your weight . It help to look after your blood pressure and cholesterol and keep your heart healthy.</p>
+                </div>
+            </div>
+
+            <div class="box weight-lifting">
+                <div class="image">
+                    <img src="https://media.self.com/photos/57d8c66650778cef321a5df2/master/w_1600%2Cc_limit/Weight-Lifting-Diabetes-Risk-Reduced-Main.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">weight lifting</a>
+                    <p>It helps support healthy weight loss by building lean muscle tissue that reduces your total body fat percentage. It reduce the risk of type 2 diabetes and cardiovascular disease.</p>
+                </div>
+            </div>
+
+            <div class="box yoga">
+                <div class="image">
+                    <img src="https://st4.depositphotos.com/4218696/39032/i/450/depositphotos_390325452-stock-photo-young-people-practicing-yoga-in.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">yoga</a>
+                    <p>It help to improve the sensitivity of β-cells to glucose, thereby improving insulin secretion, and It increase the blood supply to the muscle and muscle relaxation, thereby improving glucose uptake.</p>
+                </div>
+            </div>
+
+            <div class="box team-sports">
+                <div class="image">
+                    <img src="https://image.sciencenordic.com/1456733.webp?imageId=1456733&width=960&height=548&format=jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">team sports</a>
+                    <p>Exercise makes insulin work better in the body, which helps people with diabetes keep their blood sugar levels in a healthier range. It makes your body more sensitive to insulin, which helps manage your diabetes.</p>
+                </div>
+            </div>
+
+            <div class="box Aerobic-dance">
+                <div class="image">
+                    <img src="https://uploads-ssl.webflow.com/61a0875915332c1fd8109f03/62659fbeb1845a05cc0af8b9_aerobic.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Aerobic dance</a>
+                    <p>It increases insulin sensitivity, which helps the cells use any available insulin to take up glucose from the blood . It increased muscular strength, endurance and motor fitness.</p>
+                </div>
+            </div>
+
+            <div class="box pilates">
+                <div class="image">
+                    <img src="https://thecore.balancedbody.com/wp-content/uploads/2024/02/2402_Classical_Pilates_Chaz_Knight__TheCore_FeaturedIMG-580x460.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">pilates</a>
+                    <p>It help build lean muscle mass and aid in the management of blood sugar and insulin levels . It increased muscle strength and tone, lower back, hips and buttocks  balanced muscular strength on both sides of your body.</p>
+                </div>
+            </div>
+
+            <div class="box Calisthenics">
+                <div class="image">
+                    <img src="https://www.setforset.com/cdn/shop/articles/calisthenics_2000x.jpg?v=1642310718" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Calisthenics</a>
+                    <p>It makes your body more sensitive to insulin  which helps manage your diabetes. Physical activity also helps control blood sugar levels and lowers your risk of heart disease and nerve damage.</p>
+                </div>
+            </div>
+
+            <div class="box Resistance-band-exercises">
+                <div class="image">
+                    <img src="https://cdn.mos.cms.futurecdn.net/hGHpcHEntmCukdQBX8QYPJ.jpg" alt="Walking">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Resistance band exercises</a>
+                    <p>Weights are not the only tool you can use to strengthen your muscles. You can also perform a wide variety of strengthening activities with resistance bands.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- workout section end -->
+
+
+    <script src="dashboard.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

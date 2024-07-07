@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+</head>
+
+<body>
+    <h1>Form Demo</h1>
+    <button>OUTSIDE THE FORM!</button>
+    <!--
+        If we have a button inside the form,the default behaviour will be submit
+        the form. But we have an option to pass an attribute called type i.e
+        same as input type. If we set type = button it will behave like only button
+        but if type = submit thin it will submit the form.
+     -->
+
+    <form action="/tacos">
+        <button type="button">Please do not submit the form</button>
+        <p>
+            <label for="username">Enter a username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+
+        <p>
+            <label for="password">Enter a password:</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+
+        <button>In the middle</button>
+
+        <p>
+            <label for="color">Enter a color:</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <!-- for every single input will not work for e.g color input. -->
+
+        <p>
+            <label>
+                Enter a number:
+                <input type="number" placeholder="Enter a number" name="number" min="1" max="100" step="2">
+            </label>
+            <!--
+                There is one other way to label an input using label element.
+                we can nest the input inside of the label like this here.
+                The input is nested inside of the label and also we don't have
+                to have the for and ID if we do it this way.
+                This is a valid approch but for some reason the standard way to
+                do this by not to nest them.
+            -->
+        </p>
+
+        <button>Submit</button>
+        <!--so does this one : but it is not a correct way-->
+        <input type="submit" value="click me">
+    </form>
+
+    <h2>Hijacking Searches</h2>
+    <h3>Search Reddit</h3>
+
+    <form action="https://www.reddit.com/search/">
+        <input type="text" name="q">
+        <button>Search reddit</button>
+    </form>
+
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search google</button>
+    </form>
+
+    <h3>Search youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search youtube</button>
+    </form>
+
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs" value="xs">
+
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="m">
+
+            <label for="xl">XL</label>
+            <input type="radio" name="size" id="xl" value="xl">
+        </p>
+
+        <p>
+            <label for="meal">Please select an meal option</label>
+            <select name="meal" id="meal">
+                <option value="">Select an option:</option>
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="chineese">Chineese</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="cheese">Amount of cheese</label>
+            <input type="range" id="cheese" min="1" max="100" value="50" name="cheese_level">
+        </p>
+
+        <p>
+            <label for="request">Any Special Request?</label>
+            <br>
+            <textarea name="Request?" id="request" cols="40" rows="10" placeholder="Type something here"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <h2>Validation Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+
+        <p>
+            <label for="username">Enter your username</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="10" required>
+        </p>
+
+        <p>
+            <input type= "email" required>
+        </p>
+
+        <button>submit</button>
+    </form>
+</body>
+
+</html>
