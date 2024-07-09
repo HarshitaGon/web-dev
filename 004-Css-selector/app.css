@@ -20,7 +20,7 @@ h1, h2 {
 
 /* ID selector */
 #signup {
-    background-color: #bc4749;
+    background-color: #231347;
     color: #f2e8cf;
 }
 
@@ -29,6 +29,12 @@ span {
 }
 
 /* class selector */
+.post a {
+    color: #00607a;
+    font-weight: 700;
+    text-decoration: none;
+}
+
 .tag {
     background-color: #333d29;
     color: #ffe8d6;
@@ -53,4 +59,86 @@ h2 + button {
 /* direct child selector */
 footer > a {
     color: #00607a;
+}
+
+/* attribute selector */
+input[type="password"] {
+    color: #780000;
+}
+
+/* section[class="post"] {
+    background-color: purple;
+} */
+
+a[href="www.google.com"] {
+    color: magenta;
+}
+
+/* -------------pseudo class-------------- */
+
+/* :hover */
+
+/* .post button:hover {
+    background-color: #d62828;
+    color: #f2e8cf;
+} ----------posted below on line 133------------*/
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* :active */
+
+.post button:active {
+    background-color: palegreen;
+}
+
+/* :nth-of-type() */
+
+.post:nth-of-type(3n) {
+    background-color: #d6d3bc;
+}
+
+/* ------------------pseudo elements------------------- */
+
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: purple;
+}
+
+p::selection {
+    background-color: #f0df73;
+}
+
+/* In css cascade , the order your styles are declared in and linked to matters like
+    h1 {
+        color: red;
+    }
+
+    h1 {
+      color: purple;
+    }
+    --------------purple wins-----------
+*/
+
+h1,h2 {
+    color:palevioletred;
+}
+
+/* ---------------Specificity occurs when a conflict catched-------------- */
+
+/* .post button:hover is the more specific selector as compared to button:hover . But on signup button there is no changes beacuse
+    ID selector is more specific selector from others. */
+
+.post button:hover {
+    background-color: #d62828;
+    color: #f2e8cf;
+}
+
+button:hover {
+    background-color: olive;
+    font-size: 10px;
 }
