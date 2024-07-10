@@ -1,0 +1,36 @@
+/*
+    ----------------------Display Property-----------------------------
+
+    1) Inline :- Width & Heigth are ignored. Margin & oadding push elements away horizontally but not vertically.
+    2) Block :- Block elements break the flow of a document. Width, Heigth, Margin & Padding are respected.
+    3) Inline-Block :- Behaved like on inline element expect Width, Heigth, Margin & Padding are respected.
+
+    ## Here h1 and span are by default block and inline level element. But it can be changed by applying display property as user want.
+*/
+
+h1 {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+    /* display: inline; */
+    width: 300px;
+    padding: 50px;
+    margin: 100px;
+}
+
+span {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    display: block;
+    width: 500px;
+    padding: 50px;
+    margin: 50px;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: olivedrab;
+    border: 5px solid black;
+    display: inline-block;
+    margin: 50px;
+}

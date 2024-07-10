@@ -1,0 +1,93 @@
+/*
+    <-------------------------------------------CSS Units----------------------------------------------------->
+
+    1) Relative : EM, REM, VH, VW, %, AND MORE !
+    2) Absolute : PX, PT, CM, IN, MM
+
+    # (PX - Pixel) : It is the most commonly used absolute unit. 1px doesn't necessarily equal the width of exactly one pixel !
+          (Not recommended for responsive website.)
+
+    # (% - percentage) : It always relative to some other value. Sometimes, it's value from the parent and other times
+                         it's a value from element itself.
+
+                         width: 50% - Half the width of the parent.
+                         Line-Heigth: 50% - Half the font size of the element itself.
+
+    # (em) : This is a relative units.
+             With font-size, 1em equals the font-size of the parent. 2em's is twice the font-size of the parent, etc.
+             With other properties, 1em is equal to the computed font-size of the element itself.
+
+    # (rem - ROOT EMS) : Relative to the root html element's font size. Often easier to work tith.
+                         If the root font-size is 20px, 1 rem is always 20px, 2 rem is always 20px, etc.
+*/
+
+
+
+html {
+    font-size: 30px;
+}
+
+#percentages {
+    background-color: #a4c3b2;
+    width: 800px;
+    height: 800px;
+}
+
+#percentages div {
+    background-color: #cce3de;
+    width: 50%;
+    height: 50%;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    line-height: 200%;
+}
+
+#ems h2 {
+    font-size: 5em;
+    margin-left: 1em;
+}
+
+#ems h3 {
+    font-size: 1.5em;
+}
+
+#ems p {
+    font-size: 1em;
+}
+
+#ems {
+    font-size: 20px;
+}
+
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #084647;
+    color: wheat
+}
+
+ul {
+    font-size: 1.5em;
+}
+
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 1.5rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
+}
+
+
