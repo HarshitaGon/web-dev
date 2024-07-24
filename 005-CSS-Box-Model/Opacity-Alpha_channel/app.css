@@ -1,0 +1,28 @@
+section {
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+}
+
+/*
+    Alpha channel : RGBA color values are an extension of RGB color values with
+    an alpha channel - which specifies the opacity of the object.
+    Background : rgba (Red,Green,Blue,Opacity) (Setting rgba of an element only
+    makes the element background transparent leaving its content as it is.)
+
+    Opacity : : The opacity property sets the opacity level for an element.
+    (Setting opacity for an elements makes the whole element transparent including its content.)
+*/
+
+#rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.5;
+}
