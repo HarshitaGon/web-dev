@@ -10,7 +10,7 @@ const score_value = 100.3;
 
 const is_logged_in = false;
 const outside_temp = null;
-let user_email; //let user_email = undefined;
+let user_email;   //let user_email = undefined;
 
 const id = Symbol('123');
 const another_id = Symbol('123');
@@ -45,3 +45,31 @@ const my_function = function() {
 console.log(typeof my_function);
 console.log(typeof my_obj);
 console.log(typeof heros);
+
+
+// Stack (primitive), Heap (Non-primitive)
+console.log("******************Stack Memory***********************");
+
+let my_youtubename = "hiteshchowdhary"
+
+let anothername = my_youtubename
+anothername = "chaiurcode"
+
+console.log(my_youtubename);
+console.log(anothername);
+
+console.log("*******************Heap Memory**************************")
+
+let user_one = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let user_two = user_one
+
+user_two.email = "hitesh@google.com"
+
+console.log(user_one.email)
+console.log(user_two.email)
+
+
