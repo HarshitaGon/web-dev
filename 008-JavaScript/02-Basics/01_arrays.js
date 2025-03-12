@@ -20,6 +20,9 @@ console.log("value of 0th index: ", myArr[0], "\n");
 
 //Array methods
 
+console.log("Some intersting methods of array n its output:- ------------------------------------ \n");
+
+
 myArr.push(6);
 myArr.push(7);
 console.log("push 6, 7 on myArr: ", myArr);
