@@ -57,8 +57,34 @@ console.log("keys of tinderUser : ", Object.keys(tinderUser));
 console.log("values of tinderUser : ", Object.values(tinderUser));
 console.log("entries of tinderUser : ", Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+console.log(tinderUser.hasOwnProperty('isLoggedIn'), "\n");
 
 /*  The hasOwnProperty() method in JavaScript checks if an object has a
     specific property as its own (not inherited). */
 
+
+
+// Object destructuring :----------------------------------------
+const course = {
+    coursename : "js in hindi",
+    price : "999",
+    courseInstructor : "hitesh"
+}
+
+// console.log(course.courseInstructor);
+
+const {courseInstructor : instructor} = course
+
+console.log("after destructuring : ", instructor, "\n");
+
+
+
+// JSON Syntax :-------------------------------------
+
+/*
+    {
+        "name": "hitesh",
+        "coursename": "js in hindi",
+        "price": "free"
+    }
+*/
